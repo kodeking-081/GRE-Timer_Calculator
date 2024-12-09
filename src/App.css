@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+  background-color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Side by side on larger screens */
+  }
+}
+
+/* Section Boxes */
+.section {
+  flex: 1;
+  background-color: #222;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Calculator Styles */
+.calculator {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display {
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  min-height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #333;
+  box-shadow: 0 3px #000;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 #000;
+}
+
+/* Specific Button Styles */
+button:nth-child(4n) {
+  background-color: #f27c38; /* Orange for operators */
+}
+
+button:nth-child(4n):hover {
+  background-color: #d9662d;
+}
+
+button:nth-last-child(2) {
+  background-color: #a642f5; /* Purple for sqrt */
+}
+
+button:nth-last-child(1) {
+  background-color: #00bcd4; /* Cyan for equals */
+}
+
+/* Timer Styles */
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timer label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.timer input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.timer button {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer button:hover {
+  background-color: #0097a7;
+}
+
+.timer-info {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+/* General Styles */
+body {
+  background-color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Side by side on larger screens */
+  }
+}
+
+/* Section Boxes */
+.section {
+  flex: 1;
+  background-color: #222;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Calculator Styles */
+.calculator {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display {
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  min-height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #333;
+  box-shadow: 0 3px #000;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 #000;
+}
+
+/* Specific Button Styles */
+button:nth-child(4n) {
+  background-color: #f27c38; /* Orange for operators */
+}
+
+button:nth-child(4n):hover {
+  background-color: #d9662d;
+}
+
+button:nth-last-child(2) {
+  background-color: #a642f5; /* Purple for sqrt */
+}
+
+button:nth-last-child(1) {
+  background-color: #00bcd4; /* Cyan for equals */
+}
+
+/* Timer Styles */
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timer label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.timer input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.timer button {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer button:hover {
+  background-color: #0097a7;
+}
+
+.timer-info {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
